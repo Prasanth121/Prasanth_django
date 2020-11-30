@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>
+            Login
+        </title>
+        
+    </head>
+    <body>
+        <form action="profile/" method="POST">
+            {% csrf_token %}
+            <label>User Name:</label>
+            {{form.username}}<br>******<br>
+            <label>Password:</label>
+            {{form.password}}
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
